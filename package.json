@@ -1,0 +1,32 @@
+{
+  "name": "jest-snapshot-syntax-highlight",
+  "displayName": "Jest Snapshot Syntax Highlight",
+  "description": "Adds syntax highlighting to Jest snapshots in vscode",
+  "version": "0.0.1",
+  "publisher": "jamieholliday",
+  "engines": {
+    "vscode": "^1.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamieholliday/jest-snapshot-syntax-highlight"
+  },
+  "categories": ["Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jest-snapshot",
+        "aliases": ["jest-snapshot", "jest-snapshot"],
+        "extensions": [".js.snap"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jest-snapshot",
+        "scopeName": "source.js.snap",
+        "path": "./syntaxes/jest-snapshot.tmLanguage"
+      }
+    ]
+  }
+}
